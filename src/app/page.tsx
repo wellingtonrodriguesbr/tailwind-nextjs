@@ -46,11 +46,11 @@ export default function Home() {
             </label>
             <div className="grid grid-cols-2 gap-6">
               <InputRoot>
-                <InputControl id="firstName" defaultValue="Diego" />
+                <InputControl id="firstName" defaultValue="Wellington" />
               </InputRoot>
 
               <InputRoot>
-                <InputControl defaultValue="Fernandes" />
+                <InputControl defaultValue="Rodrigues" />
               </InputRoot>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function Home() {
               <InputControl
                 id="email"
                 type="email"
-                defaultValue="diego@rocketseat.com.br"
+                defaultValue="wellingtonrodriguesbr@email.com.br"
               />
             </InputRoot>
           </div>
@@ -92,7 +92,7 @@ export default function Home() {
               Role
             </label>
             <InputRoot>
-              <InputControl id="role" defaultValue="CTO" />
+              <InputControl id="role" defaultValue="Front-end developer" />
             </InputRoot>
           </div>
 
