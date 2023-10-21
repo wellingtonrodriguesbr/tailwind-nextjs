@@ -1,7 +1,8 @@
-import { Mail, UploadCloud, User } from "lucide-react";
+import { Mail } from "lucide-react";
 import { SettingsTabs } from "../components/SettingsTabs";
-import { InputControl, InputPrefix, InputRoot } from "../components/Input";
-import * as FileInput from "../components/Form/Fileinput";
+
+import * as FileInput from "../components/Form/FileInput";
+import * as Input from "../components/Form/Input";
 
 export default function Home() {
   return (
@@ -46,13 +47,13 @@ export default function Home() {
               Name
             </label>
             <div className="grid grid-cols-2 gap-6">
-              <InputRoot>
-                <InputControl id="firstName" defaultValue="Wellington" />
-              </InputRoot>
+              <Input.Root>
+                <Input.Control id="firstName" defaultValue="Wellington" />
+              </Input.Root>
 
-              <InputRoot>
-                <InputControl defaultValue="Rodrigues" />
-              </InputRoot>
+              <Input.Root>
+                <Input.Control defaultValue="Rodrigues" />
+              </Input.Root>
             </div>
           </div>
 
@@ -63,16 +64,16 @@ export default function Home() {
             >
               Email address
             </label>
-            <InputRoot>
-              <InputPrefix>
+            <Input.Root>
+              <Input.Prefix>
                 <Mail className="h-5 w-5 text-zinc-500" />
-              </InputPrefix>
-              <InputControl
+              </Input.Prefix>
+              <Input.Control
                 id="email"
                 type="email"
                 defaultValue="wellingtonrodriguesbr@email.com.br"
               />
-            </InputRoot>
+            </Input.Root>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
@@ -97,9 +98,9 @@ export default function Home() {
             <label htmlFor="role" className="text-sm font-medium text-zinc-700">
               Role
             </label>
-            <InputRoot>
-              <InputControl id="role" defaultValue="Front-end developer" />
-            </InputRoot>
+            <Input.Root>
+              <Input.Control id="role" defaultValue="Front-end developer" />
+            </Input.Root>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
