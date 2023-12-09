@@ -1,8 +1,9 @@
-import { Mail } from "lucide-react";
+import { ChevronDown, Mail } from "lucide-react";
 import { SettingsTabs } from "../components/SettingsTabs";
 
 import * as FileInput from "../components/Form/Fileinput";
 import * as Input from "../components/Form/Input";
+import { Select } from "../components/Form/Select";
 
 export default function Home() {
   return (
@@ -110,6 +111,8 @@ export default function Home() {
             >
               Country
             </label>
+
+            <Select />
             <div />
           </div>
 
