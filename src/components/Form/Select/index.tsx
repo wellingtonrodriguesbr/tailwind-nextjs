@@ -25,7 +25,7 @@ export function Select({ children, placeholder, ...props }: SelectProps) {
           side="bottom"
           sideOffset={8}
           position="popper"
-          className="z-10 shadow-sm rounded-lg border border-zinc-200 bg-white w-[--radix-select-trigger-width] overflow-hidden"
+          className="z-10 shadow-sm animate-slideDownAndFade rounded-lg border border-zinc-200 bg-white w-[--radix-select-trigger-width] overflow-hidden"
         >
           <RadixSelect.Viewport>{children}</RadixSelect.Viewport>
         </RadixSelect.Content>
