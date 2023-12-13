@@ -12,7 +12,7 @@ interface SelectProps extends RadixSelect.SelectProps {
 export function Select({ children, placeholder, ...props }: SelectProps) {
   return (
     <RadixSelect.Root {...props}>
-      <RadixSelect.Trigger className="flex h-11 w-full items-center justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm data-[placeholder]:text-zinc-500">
+      <RadixSelect.Trigger className="flex h-11 w-full items-center justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm data-[placeholder]:text-zinc-500 outline-none focus:border-violet-300 focus:ring-4 focus:ring-violet-100">
         <RadixSelect.Value placeholder={placeholder} className="text-black" />
 
         <RadixSelect.Icon>
