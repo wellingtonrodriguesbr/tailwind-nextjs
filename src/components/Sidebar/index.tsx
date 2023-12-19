@@ -23,7 +23,7 @@ import { Button } from "../Button";
 
 export function Sidebar() {
   return (
-    <Collapsible.Root className="w-full border-b border-zinc-200 p-4 flex flex-col gap-6 fixed top-0 data-[state=open]:bottom-0 left-0 z-20 bg-white lg:right-auto lg:w-80 lg:border-r lg:py-8 lg:px-5 lg:data-[state=closed]:bottom-0">
+    <Collapsible.Root className="w-full border-b border-zinc-200 p-4 flex flex-col gap-6 fixed top-0 data-[state=open]:bottom-0 left-0 z-20 bg-white dark:bg-zinc-900 lg:right-auto lg:w-80 lg:border-r lg:py-8 lg:px-5 lg:data-[state=closed]:bottom-0">
       <div className="flex items-center justify-between">
         <Logo />
         <Collapsible.Trigger asChild className="lg:hidden">
@@ -60,7 +60,7 @@ export function Sidebar() {
           </nav>
           <UsedSpaceWidget />
 
-          <div className="h-px bg-zinc-200"></div>
+          <div className="h-px bg-zinc-200 dark:bg-zinc-700"></div>
           <Profile />
         </div>
       </Collapsible.Content>
